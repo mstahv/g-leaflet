@@ -1,0 +1,22 @@
+= g-leaflet Add-On project =
+
+g-leaflet is a fresh start for GWT API for Leaflet. Integration 
+should become lightweight using javascript overlays, but with 
+small compromises with to API. Hoping this project to be/become 
+as simple and clean as Leaflet itself.
+
+== Usage ==
+
+When using library, developer must first call 
+LeafletResourceInjector.ensureInjected() (XSLinker compatible!)
+that will injects required resources to your apps host page. 
+
+Things should also work if one includes Leaflet into host page 
+in other manners.
+
+Manual and JavaDocs are not yet available (pathes wellcome!). API
+should mimic actual Leaflet API quite a lot. Some hints can also 
+taken from v-leaflet project (Vaadin Leaflet integration), that
+has defined the initial feature set. Code for it might be in a 
+branch initially.
+
