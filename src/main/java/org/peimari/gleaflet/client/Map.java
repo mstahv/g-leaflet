@@ -1,7 +1,7 @@
 package org.peimari.gleaflet.client;
 
-import org.peimari.gleaflet.client.Control.Attribution;
-import org.peimari.gleaflet.client.Control.Control;
+import org.peimari.gleaflet.client.control.Attribution;
+import org.peimari.gleaflet.client.control.Control;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.Element;
@@ -62,11 +62,17 @@ public class Map extends JavaScriptObject {
 		this.removeLayer(layer);
 	}-*/;
 
+	/**
+	 * Adds click listener to map.
+	 * 
+	 * @param listener
+	 */
 	public native final void addClickListener(ClickListener listener) 
 	/*-{
 		this.on("click", function(e) {
 				$entry(listener.@org.peimari.gleaflet.client.ClickListener::onClick(Lorg/peimari/gleaflet/client/MouseEvent;)(e));
 		});
+		// TODO return the function that user can use as reference if a specific listener needs to be removed
 	}-*/;
 
 	public native final void addControl(Control control) 
@@ -79,6 +85,11 @@ public class Map extends JavaScriptObject {
 		this.on("moveend", function(e) {
 				$entry(listener.@org.peimari.gleaflet.client.MoveEndListener::onMoveEnd(Lorg/peimari/gleaflet/client/Event;)(e));
 		});
+	}-*/;
+
+	public native final void removeClickListeners() 
+	/*-{
+		this.off("click");
 	}-*/;
 
 }

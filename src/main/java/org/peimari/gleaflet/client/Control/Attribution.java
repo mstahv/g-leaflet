@@ -1,4 +1,4 @@
-package org.peimari.gleaflet.client.Control;
+package org.peimari.gleaflet.client.control;
 
 import com.google.gwt.core.client.JavaScriptObject;
 

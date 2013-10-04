@@ -1,4 +1,4 @@
-package org.peimari.gleaflet.client.Control;
+package org.peimari.gleaflet.client.control;
 
 import org.peimari.gleaflet.client.DivIcon;
 import org.peimari.gleaflet.client.Icon;

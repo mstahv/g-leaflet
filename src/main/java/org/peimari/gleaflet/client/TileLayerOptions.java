@@ -22,7 +22,7 @@ public class TileLayerOptions extends JavaScriptObject {
 		this.detectRetina = detect;
 	}-*/;
 
-	public final void setSubDomains(String[] subDomains) {
+	public final void setSubDomains(String... subDomains) {
 		JsArrayString domains = JsArrayString.createArray().cast();
 		for (String a : subDomains) {
 			domains.push(a);
