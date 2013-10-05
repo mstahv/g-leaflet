@@ -3,7 +3,7 @@ package org.peimari.gleaflet.client;
 import com.google.gwt.core.client.JsArray;
 
 
-public class Polygon extends AbstractVector {
+public class Polygon extends Polyline {
 	
 	protected Polygon() {}
 	

@@ -1,7 +1,7 @@
 package org.peimari.gleaflet.client;
 
 
-public class Marker extends AbstractVector {
+public class Marker extends AbstractPath {
 	
 	protected Marker() {}
 	

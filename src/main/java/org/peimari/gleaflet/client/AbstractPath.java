@@ -1,5 +1,7 @@
 package org.peimari.gleaflet.client;
 
+import com.google.gwt.core.client.JavaScriptObject;
+
 
 public class AbstractPath extends AbstractVector {
 
@@ -18,4 +20,15 @@ public class AbstractPath extends AbstractVector {
 	/*-{
 		this.setStyle(newPathOptions);
 	}-*/;
+
+	public native final LatLngBounds getBounds() 
+	/*-{
+		return this.getBounds();
+	}-*/;
+
+	public native final JavaScriptObject toGeoJSON() 
+	/*-{
+		return this.toGeoJSON();
+	}-*/;
+	
 }

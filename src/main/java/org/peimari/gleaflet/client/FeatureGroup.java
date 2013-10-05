@@ -17,5 +17,10 @@ public class FeatureGroup extends LayerGroup implements ILayer {
 		}
 		return group;
 	}
+	
+	public native final void clearLayers() 
+	/*-{
+	 	this.clearLayers();
+	 }-*/;
 
 }

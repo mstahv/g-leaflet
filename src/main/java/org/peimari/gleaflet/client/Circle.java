@@ -1,7 +1,7 @@
 package org.peimari.gleaflet.client;
 
 
-public class Circle extends AbstractVector {
+public class Circle extends AbstractPath {
 	
 	protected Circle() {}
 	
@@ -13,6 +13,11 @@ public class Circle extends AbstractVector {
 	public native final LatLng getLatLng() 
 	/*-{
 		return this.getLatLng();
+	}-*/;
+
+	public native final double getRadius() 
+	/*-{
+		return this.getRadius();
 	}-*/;
 
 }

@@ -1,7 +1,9 @@
 package org.peimari.gleaflet.client;
 
+import com.google.gwt.core.client.JavaScriptObject;
 
-public class DivIcon extends AbstractVector {
+
+public class DivIcon extends JavaScriptObject {
 	
 	protected DivIcon() {}
 	
