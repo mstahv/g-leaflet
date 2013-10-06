@@ -22,10 +22,6 @@ public class LeafletResourceInjector {
 		bundle.css().ensureInjected();
 		injectScript(bundle.baseScript().getText());
 		setDefaultMarkerIconPath(getDefaultMarkerDirectory());
-		// TODO make sure it is possible to inject without the draw plugin
-		// Probably best to split into separate bundle
-		bundle.drawCss().ensureInjected();
-		injectScript(bundle.drawScript().getText());
 	}
 
 	protected String getDefaultMarkerDirectory() {

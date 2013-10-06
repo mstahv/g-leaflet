@@ -2,7 +2,6 @@ package org.peimari.gleaflet.client;
 
 import org.peimari.gleaflet.client.control.Attribution;
 import org.peimari.gleaflet.client.control.Control;
-import org.peimari.gleaflet.client.draw.LayerCreatedListener;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.Element;
@@ -91,14 +90,6 @@ public class Map extends JavaScriptObject {
 	public native final void removeClickListeners() 
 	/*-{
 		this.off("click");
-	}-*/;
-
-	public native final  void addLayerCreatedListener(
-			LayerCreatedListener listener) 
-	/*-{
-		this.on("draw:created", function(e) {
-				$entry(listener.@org.peimari.gleaflet.client.draw.LayerCreatedListener::onCreated(Lorg/peimari/gleaflet/client/draw/LayerCreatedEvent;)(e));
-		});
 	}-*/;
 
 }
