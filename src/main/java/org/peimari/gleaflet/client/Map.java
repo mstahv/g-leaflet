@@ -80,6 +80,11 @@ public class Map extends JavaScriptObject {
 		this.addControl(control);
 	}-*/;
 
+	public native final void removeControl(Control control) 
+	/*-{
+		this.removeControl(control);
+	}-*/;
+
 	public native final void addMoveEndListener(MoveEndListener listener) 
 	/*-{
 		this.on("moveend", function(e) {
