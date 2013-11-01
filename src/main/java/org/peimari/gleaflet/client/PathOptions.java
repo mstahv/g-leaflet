@@ -31,7 +31,7 @@ public class PathOptions extends JavaScriptObject {
 		this.fillColor = fillColor;
 	}-*/;
 
-	public native final void setFill(Boolean fill) 
+	public native final void setFill(boolean fill) 
 	/*-{
 		this.fill = fill;
 	}-*/;
