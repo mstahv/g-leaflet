@@ -19,4 +19,9 @@ public class Marker extends AbstractPath {
 		bindPopup(popup, null);
 	}
 
+	public native final LatLng getLatLng() 
+	/*-{
+		return this.getLatLng();
+	}-*/;
+
 }
