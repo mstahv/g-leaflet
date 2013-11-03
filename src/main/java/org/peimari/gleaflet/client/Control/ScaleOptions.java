@@ -1,8 +1,5 @@
 package org.peimari.gleaflet.client.control;
 
-import org.peimari.gleaflet.client.DivIcon;
-import org.peimari.gleaflet.client.Icon;
-
 import com.google.gwt.core.client.JavaScriptObject;
 
 public class ScaleOptions extends JavaScriptObject {
@@ -14,24 +11,14 @@ public class ScaleOptions extends JavaScriptObject {
 		return {};
 	}-*/;
 
-	public native final void setOpacity(Double opacity) 
+	public native final void setImperial(boolean imperial) 
 	/*-{
-		this.opacity = opacity;
+		this.imperial = imperial;
 	}-*/;
 
-	public native final void setTitle(String title) 
+	public native final void setMetric(boolean metric) 
 	/*-{
-		this.title = title;
-	}-*/;
-
-	public native final void setIcon(DivIcon icon) 
-	/*-{
-		this.icon = icon;
-	}-*/;
-
-	public native final void setIcon(Icon icon) 
-	/*-{
-		this.icon = icon;
+		this.metric = metric;
 	}-*/;
 
 }

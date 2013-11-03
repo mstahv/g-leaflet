@@ -2,6 +2,7 @@ package org.peimari.gleaflet.client;
 
 import org.peimari.gleaflet.client.control.Attribution;
 import org.peimari.gleaflet.client.control.Control;
+import org.peimari.gleaflet.client.control.Zoom;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.Element;
@@ -96,5 +97,11 @@ public class Map extends JavaScriptObject {
 	/*-{
 		this.off("click");
 	}-*/;
+
+	public native final Zoom getZoomControl() 
+	/*-{
+		return this.zoomControl;
+	}-*/;
+
 
 }
