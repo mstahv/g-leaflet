@@ -23,5 +23,13 @@ public class Marker extends AbstractPath {
 	/*-{
 		return this.getLatLng();
 	}-*/;
+	
+	public native final void addDragEndListener(ClickListener listener) 
+	/*-{
+		this.on("dragend", function(e) {
+				$entry(listener.@org.peimari.gleaflet.client.ClickListener::onClick(Lorg/peimari/gleaflet/client/MouseEvent;)(e));
+		});
+	}-*/;
+
 
 }

@@ -31,4 +31,9 @@ public class MarkerOptions extends JavaScriptObject {
 		this.icon = icon;
 	}-*/;
 
+	public native final void setDraggable(boolean draggable) 
+	/*-{
+		this.draggable = draggable;
+	}-*/;
+
 }
