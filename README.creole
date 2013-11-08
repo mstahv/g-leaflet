@@ -11,6 +11,9 @@ https://github.com/mstahv/g-leaflet-draw
 Releases available via Vaadin Directory:
 https://vaadin.com/directory/
 
+A small usage example and test project available at:
+https://github.com/mstahv/gleafletexample
+
 == Usage ==
 
 When using library, developer must first call 
