@@ -68,13 +68,18 @@ public class Map extends JavaScriptObject {
 	 * Adds click listener to map.
 	 * 
 	 * @param listener
+	 * @return a handle that can be used to remove this specific listener from
+	 *         the map
 	 */
-	public native final void addClickListener(ClickListener listener)
+	public native final JavaScriptObject addClickListener(ClickListener listener)
 	/*-{
-		this.on("click", function(e) {
+
+		var fn = function(e) {
 				$entry(listener.@org.peimari.gleaflet.client.ClickListener::onClick(Lorg/peimari/gleaflet/client/MouseEvent;)(e));
-		});
-		// TODO return the function that user can use as reference if a specific listener needs to be removed
+		}
+		fn.prototype.gname = "click";
+		this.on(fn.prototype.gname, fn);
+		return fn;
 	}-*/;
 
 	public native final void addControl(Control control)
@@ -87,11 +92,15 @@ public class Map extends JavaScriptObject {
 		this.removeControl(control);
 	}-*/;
 
-	public native final void addMoveEndListener(MoveEndListener listener)
+	public native final JavaScriptObject addMoveEndListener(
+			MoveEndListener listener)
 	/*-{
-		this.on("moveend", function(e) {
+		var fn = function(e) {
 				$entry(listener.@org.peimari.gleaflet.client.MoveEndListener::onMoveEnd(Lorg/peimari/gleaflet/client/Event;)(e));
-		});
+		};
+		fn.prototype.gname = "moveend";
+		this.on(fn.prototype.gname, fn);
+		return fn;
 	}-*/;
 
 	/**
@@ -99,8 +108,10 @@ public class Map extends JavaScriptObject {
 	 * registration object returned by listener addition method.
 	 * 
 	 * @param listenerRegistration
+	 *            the object returned by listener addition method
 	 */
-	public native final void removeListener(JavaScriptObject listenerRegistration)
+	public native final void removeListener(
+			JavaScriptObject listenerRegistration)
 	/*-{
 		this.off(listenerRegistration.prototype.gname, listenerRegistration);
 	}-*/;
