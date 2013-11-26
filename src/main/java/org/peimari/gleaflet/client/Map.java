@@ -77,8 +77,8 @@ public class Map extends JavaScriptObject {
 		var fn = function(e) {
 				$entry(listener.@org.peimari.gleaflet.client.ClickListener::onClick(Lorg/peimari/gleaflet/client/MouseEvent;)(e));
 		}
-		fn.prototype.gname = "click";
-		this.on(fn.prototype.gname, fn);
+		fn.prototype['gname'] = "click";
+		this.on(fn.prototype['gname'], fn);
 		return fn;
 	}-*/;
 
@@ -98,8 +98,8 @@ public class Map extends JavaScriptObject {
 		var fn = function(e) {
 				$entry(listener.@org.peimari.gleaflet.client.MoveEndListener::onMoveEnd(Lorg/peimari/gleaflet/client/Event;)(e));
 		};
-		fn.prototype.gname = "moveend";
-		this.on(fn.prototype.gname, fn);
+		fn.prototype['gname'] = "moveend";
+		this.on(fn.prototype['gname'], fn);
 		return fn;
 	}-*/;
 
