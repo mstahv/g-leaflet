@@ -46,17 +46,17 @@ public class PathOptions extends JavaScriptObject {
 		this.stroke = stroke;
 	}-*/;
 
-	public native final void setWeight(Integer weight)
+	public native final void setWeight(int weight)
 	/*-{
 		this.weight = weight;
 	}-*/;
 
-	public native final void setOpacity(Double opacity) 
+	public native final void setOpacity(double opacity) 
 	/*-{
 		this.opacity = opacity;
 	}-*/;
 
-	public native final void setFillOpacity(Double fillOpacity)
+	public native final void setFillOpacity(double fillOpacity)
 	/*-{
 		this.fillOpacity = fillOpacity;
 	}-*/;

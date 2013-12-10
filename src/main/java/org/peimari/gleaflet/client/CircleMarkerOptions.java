@@ -10,7 +10,7 @@ public class CircleMarkerOptions extends CircleOptions {
 		return {};
 	}-*/;
 
-	public native final void setRadius(Double radius)
+	public native final void setRadius(double radius)
 	/*-{
 		this.radius = radius;
 	}-*/;

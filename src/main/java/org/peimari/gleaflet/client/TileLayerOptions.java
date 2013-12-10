@@ -35,17 +35,17 @@ public class TileLayerOptions extends JavaScriptObject {
 		this.subdomains = subdomains;
 	}-*/;
 
-	public native final void setMaxZoom(Integer maxZoom) 
+	public native final void setMaxZoom(int maxZoom) 
 	/*-{
 		this.maxZoom = maxZoom;
 	}-*/;
 
-	public native final void setTms(Boolean tms) 
+	public native final void setTms(boolean tms) 
 	/*-{
 		this.tms = tms;
 	}-*/;
 
-	public native final void setOpacity(Double opacity) 
+	public native final void setOpacity(double opacity) 
 	/*-{
 		this.opacity = opacity;
 	}-*/;
