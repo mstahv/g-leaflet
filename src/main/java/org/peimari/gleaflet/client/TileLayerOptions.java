@@ -50,4 +50,9 @@ public class TileLayerOptions extends JavaScriptObject {
 		this.opacity = opacity;
 	}-*/;
 
+	public native final void setZindex(int zIndex) 
+	/*-{
+		this.zIndex = zIndex;
+	}-*/;
+	
 }
