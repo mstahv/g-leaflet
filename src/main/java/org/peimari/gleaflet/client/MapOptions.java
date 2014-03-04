@@ -31,4 +31,9 @@ public class MapOptions extends JavaScriptObject {
 		this.zoom = zoom;
 	}-*/;
 
+	public native final void setMaxZoom(int maxZoom) 
+	/*-{
+		this.maxZoom = maxZoom;
+	}-*/;
+
 }
