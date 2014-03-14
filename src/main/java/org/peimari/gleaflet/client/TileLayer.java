@@ -10,5 +10,14 @@ public class TileLayer extends JavaScriptObject implements ILayer {
 	/*-{
 		return new $wnd.L.TileLayer(url, tileOptions);
 	}-*/;
+        
+        public native final void bringToFront() 
+        /*-{
+            this.bringToFront();
+        }-*/;
 
+        public native final void bringToBack() 
+        /*-{
+            this.bringToBack();
+        }-*/;
 }

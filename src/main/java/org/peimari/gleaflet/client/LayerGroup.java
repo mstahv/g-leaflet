@@ -46,5 +46,14 @@ public class LayerGroup extends JavaScriptObject implements ILayer {
 	}-*/;
 
 
-	
+	public native final void bringToFront() 
+        /*-{
+            this.bringToFront();
+        }-*/;
+
+        public native final void bringToBack() 
+        /*-{
+            this.bringToBack();
+        }-*/;
+
 }

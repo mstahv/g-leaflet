@@ -27,5 +27,16 @@ public class AbstractVector extends JavaScriptObject implements ILayer {
 				$entry(listener.@org.peimari.gleaflet.client.ClickListener::onClick(Lorg/peimari/gleaflet/client/MouseEvent;)(e));
 		});
 	}-*/;
+        
+        public native final void bringToFront() 
+        /*-{
+            this.bringToFront();
+        }-*/;
+
+        public native final void bringToBack() 
+        /*-{
+            this.bringToBack();
+        }-*/;
+
 
 }
