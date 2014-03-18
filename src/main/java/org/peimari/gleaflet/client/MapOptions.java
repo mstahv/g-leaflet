@@ -36,4 +36,9 @@ public class MapOptions extends JavaScriptObject {
 		this.maxZoom = maxZoom;
 	}-*/;
 
+        public native final void setMaxBounds(LatLngBounds bounds) 
+        /*-{
+            this.maxBounds = bounds;
+        }-*/;
+
 }

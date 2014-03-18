@@ -126,4 +126,9 @@ public class Map extends JavaScriptObject {
 		return this.zoomControl;
 	}-*/;
 
+        public native final void setMaxBounds(LatLngBounds bounds)
+        /*-{
+            this.setMaxBounds(bounds);
+        }-*/;
+
 }
