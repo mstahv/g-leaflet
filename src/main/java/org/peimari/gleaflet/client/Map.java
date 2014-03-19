@@ -130,5 +130,11 @@ public class Map extends JavaScriptObject {
         /*-{
             this.setMaxBounds(bounds);
         }-*/;
+        
+        public native final void closePopup(Popup popup)
+        /*-{
+            this.closePopup(popup);
+        }-*/;
+        
 
 }

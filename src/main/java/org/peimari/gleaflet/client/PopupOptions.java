@@ -34,7 +34,16 @@ public class PopupOptions extends JavaScriptObject {
 	public native final void setOffset(Point offset) 
 	/*-{
 		this.offset = offset;
-		
+	}-*/;
+
+        public native final void setKeepInView(boolean keepInView) 
+	/*-{
+		this.keepInView = keepInView;
+	}-*/;
+
+        public native final void setCloseOnClick(boolean closeOnClick) 
+	/*-{
+		this.closeOnClick = closeOnClick;
 	}-*/;
 
 	public native final void setZoomAnimation(boolean zoomAnimation) 
