@@ -31,4 +31,14 @@ public class AbstractPath extends AbstractVector {
 		return this.toGeoJSON();
 	}-*/;
 	
+	public native final void bindPopup(String popup, PopupOptions popupOptions) 
+	/*-{
+		this.bindPopup(popup, popupOptions);
+	}-*/;
+
+	public final void bindPopup(String popup) {
+		bindPopup(popup, null);
+	}
+
+	
 }
