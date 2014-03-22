@@ -14,7 +14,6 @@
         <url>git://github.com/mstahv/g-leaflet.git</url>
         <connection>scm:git:git://github.com/mstahv/g-leaflet.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/mstahv/g-leaflet.git</developerConnection>
-        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
