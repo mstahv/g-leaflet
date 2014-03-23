@@ -35,4 +35,8 @@ public class WmsLayerOptions extends TileLayerOptions {
 		this.version = version;
 	}-*/;
 
+    public native final void setCrs(Crs crs)
+	/*-{
+        this.crs = crs;
+    }-*/;
 }
