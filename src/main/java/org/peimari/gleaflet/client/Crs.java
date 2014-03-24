@@ -28,4 +28,9 @@ public class Crs extends JavaScriptObject {
 	/*-{
 		return $wnd.L.CRS.Simple;
 	}-*/;
+        
+        public static native final Crs byName(String name) 
+	/*-{
+		return $wnd.L.CRS[name];
+	}-*/;
 }
