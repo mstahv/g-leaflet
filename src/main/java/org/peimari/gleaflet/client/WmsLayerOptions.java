@@ -39,4 +39,9 @@ public class WmsLayerOptions extends TileLayerOptions {
 	/*-{
         this.crs = crs;
     }-*/;
+    
+    	public native final void setViewparams(String viewparams)
+    	/*-{
+		this.viewparams = viewparams;
+	}-*/;
 }
