@@ -54,5 +54,15 @@ public class TileLayerOptions extends JavaScriptObject {
 	/*-{
 		this.zIndex = zIndex;
 	}-*/;
+
+	public native final void setContinuousWorld(boolean continuousWorld)
+	/*-{
+		this.continuousWorld = contnuousWorld;
+	}-*/;
+
+        public native final void setNoWrap(boolean noWrap)
+	/*-{
+		this.noWrap = noWrap;
+	}-*/;
 	
 }
