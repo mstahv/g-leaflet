@@ -57,7 +57,7 @@ public class TileLayerOptions extends JavaScriptObject {
 
 	public native final void setContinuousWorld(boolean continuousWorld)
 	/*-{
-		this.continuousWorld = contnuousWorld;
+		this.continuousWorld = continuousWorld;
 	}-*/;
 
         public native final void setNoWrap(boolean noWrap)
