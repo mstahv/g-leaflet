@@ -29,6 +29,11 @@ public class Map extends JavaScriptObject {
 		return this.getZoom();
 	}-*/;
 
+	public native final LatLng getCenter()
+        /*-{
+                return this.getCenter();
+        }-*/;
+	
 	public native final void setView(LatLng center, Integer zoom)
 	/*-{
 		this.setView(center,zoom,null);
