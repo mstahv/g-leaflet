@@ -17,6 +17,16 @@ public class LatLngBounds extends JavaScriptObject {
 		return this.getCenter();
 	}-*/;
 
+	public native final LatLng getSouthWest()
+	/*-{
+		return this.getSouthWest();
+	}-*/;
+
+	public native final LatLng getNorthEast()
+	/*-{
+		return this.getNorthEast();
+	}-*/;
+
 	public native final String toBBoxString() 
 	/*-{
 		return this.toBBoxString();
