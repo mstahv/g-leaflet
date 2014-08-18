@@ -32,9 +32,9 @@ public class TileLayer extends JavaScriptObject implements ILayer {
          */
         public native final JavaScriptObject addLoadListener(LoadListener listener)
         /*-{
-		var fn = function(e) {
-				$entry(listener.@org.peimari.gleaflet.client.LoadListener::onLoad(Lorg/peimari/gleaflet/client/Event;)(e));
-		}
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.LoadListener::onLoad(Lorg/peimari/gleaflet/client/Event;)(e);
+		});
 		fn.prototype['gname'] = "load";
 		this.on(fn.prototype['gname'], fn);
 		return fn;
@@ -51,9 +51,9 @@ public class TileLayer extends JavaScriptObject implements ILayer {
          */
         public native final JavaScriptObject addLoadingListener(LoadingListener listener)
         /*-{
-		var fn = function(e) {
-				$entry(listener.@org.peimari.gleaflet.client.LoadingListener::onLoading(Lorg/peimari/gleaflet/client/Event;)(e));
-		}
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.LoadingListener::onLoading(Lorg/peimari/gleaflet/client/Event;)(e);
+		});
 		fn.prototype['gname'] = "loading";
 		this.on(fn.prototype['gname'], fn);
 		return fn;

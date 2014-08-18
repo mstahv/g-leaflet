@@ -30,9 +30,9 @@ public class Map extends JavaScriptObject {
 	}-*/;
 
 	public native final LatLng getCenter()
-        /*-{
-                return this.getCenter();
-        }-*/;
+    /*-{
+            return this.getCenter();
+    }-*/;
 	
 	public native final void setView(LatLng center, Integer zoom)
 	/*-{
@@ -79,9 +79,9 @@ public class Map extends JavaScriptObject {
 	public native final JavaScriptObject addClickListener(ClickListener listener)
 	/*-{
 
-		var fn = function(e) {
-				$entry(listener.@org.peimari.gleaflet.client.ClickListener::onClick(Lorg/peimari/gleaflet/client/MouseEvent;)(e));
-		}
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.ClickListener::onClick(Lorg/peimari/gleaflet/client/MouseEvent;)(e);
+		});
 		fn.prototype['gname'] = "click";
 		this.on(fn.prototype['gname'], fn);
 		return fn;
@@ -100,9 +100,9 @@ public class Map extends JavaScriptObject {
 	public native final JavaScriptObject addMoveEndListener(
 			MoveEndListener listener)
 	/*-{
-		var fn = function(e) {
-				$entry(listener.@org.peimari.gleaflet.client.MoveEndListener::onMoveEnd(Lorg/peimari/gleaflet/client/Event;)(e));
-		};
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.MoveEndListener::onMoveEnd(Lorg/peimari/gleaflet/client/Event;)(e);
+		});
 		fn.prototype['gname'] = "moveend";
 		this.on(fn.prototype['gname'], fn);
 		return fn;
@@ -131,15 +131,14 @@ public class Map extends JavaScriptObject {
 		return this.zoomControl;
 	}-*/;
 
-        public native final void setMaxBounds(LatLngBounds bounds)
-        /*-{
-            this.setMaxBounds(bounds);
-        }-*/;
-        
-        public native final void closePopup(Popup popup)
-        /*-{
-            this.closePopup(popup);
-        }-*/;
-        
+    public native final void setMaxBounds(LatLngBounds bounds)
+    /*-{
+        this.setMaxBounds(bounds);
+    }-*/;
+    
+    public native final void closePopup(Popup popup)
+    /*-{
+        this.closePopup(popup);
+    }-*/;
 
 }

@@ -42,9 +42,9 @@ public class Popup extends JavaScriptObject {
      */
     public native final JavaScriptObject addCloseListener(
             PopupClosedListener listener) /*-{
-     var fn = function(e) {
-     $entry(listener.@org.peimari.gleaflet.client.PopupClosedListener::onClosed(Lorg/peimari/gleaflet/client/Event;)(e));
-     }
+     var fn = $entry(function(e) {
+     	listener.@org.peimari.gleaflet.client.PopupClosedListener::onClosed(Lorg/peimari/gleaflet/client/Event;)(e);
+     });
      fn.prototype['gname'] = "close";
      this.on(fn.prototype['gname'], fn);
      return fn;
