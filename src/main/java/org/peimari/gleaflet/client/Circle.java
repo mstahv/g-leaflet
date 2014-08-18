@@ -5,7 +5,7 @@ public class Circle extends AbstractPath {
 	
 	protected Circle() {}
 	
-	public static native Circle create(LatLng latlng, Double radius, CircleOptions circleOptions)
+	public static native Circle create(LatLng latlng, double radius, CircleOptions circleOptions)
 	/*-{
 		return new $wnd.L.Circle(latlng, radius, circleOptions);
 	}-*/;
