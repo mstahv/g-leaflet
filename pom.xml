@@ -4,7 +4,7 @@
     <!-- POM file generated with GWT webAppCreator -->
     <modelVersion>4.0.0</modelVersion>
 
-    <version>0.4.7-SNAPSHOT</version>
+    <version>0.4.7</version>
     <groupId>org.peimari</groupId>
     <artifactId>g-leaflet</artifactId>
     <packaging>jar</packaging>
