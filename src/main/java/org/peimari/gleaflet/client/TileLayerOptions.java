@@ -35,6 +35,11 @@ public class TileLayerOptions extends JavaScriptObject {
 		this.subdomains = subdomains;
 	}-*/;
 
+	public native final void setMinZoom(int minZoom)
+	/*-{
+		this.minZoom = minZoom;
+	}-*/;
+
 	public native final void setMaxZoom(int maxZoom) 
 	/*-{
 		this.maxZoom = maxZoom;
