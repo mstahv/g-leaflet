@@ -8,10 +8,14 @@ public class MapWidget extends Widget {
 	private Map map;
 
 	public MapWidget() {		
-		setElement(Document.get().createDivElement());
-		setHeight("450px");
-		map = Map.create(getElement(), MapOptions.create());
+		this(MapOptions.create());
 	}
+	
+	public MapWidget(MapOptions options) {   
+    	    	setElement(Document.get().createDivElement());
+    		setHeight("450px");
+    		map = Map.create(getElement(), options);
+  }
 	
 	public Map getMap() {
 		return map;
