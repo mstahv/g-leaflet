@@ -3,7 +3,7 @@ package org.peimari.gleaflet.client;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
-public class DivIcon extends JavaScriptObject {
+public class DivIcon extends JavaScriptObject implements AnyIcon {
 	
 	protected DivIcon() {}
 	
