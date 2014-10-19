@@ -15,6 +15,11 @@ public class Marker extends AbstractPath {
 		return this.getLatLng();
 	}-*/;
 	
+	public native final Marker setIcon(AnyIcon icon) 
+	/*-{
+		return this.setIcon(icon);
+	}-*/;
+	
 	public native final void addDragEndListener(ClickListener listener) 
 	/*-{
 		this.on("dragend", $entry(function(e) {

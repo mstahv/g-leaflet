@@ -21,12 +21,7 @@ public class MarkerOptions extends JavaScriptObject {
 		this.title = title;
 	}-*/;
 
-	public native final void setIcon(DivIcon icon) 
-	/*-{
-		this.icon = icon;
-	}-*/;
-
-	public native final void setIcon(Icon icon) 
+	public native final void setIcon(AnyIcon icon) 
 	/*-{
 		this.icon = icon;
 	}-*/;
