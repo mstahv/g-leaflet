@@ -69,5 +69,10 @@ public class TileLayerOptions extends JavaScriptObject {
 	/*-{
 		this.noWrap = noWrap;
 	}-*/;
+
+	public native final void setCustomOption(String optionName, String optionValue)
+	/*-{
+		this[optionName] = optionValue;
+	}-*/;
 	
 }
