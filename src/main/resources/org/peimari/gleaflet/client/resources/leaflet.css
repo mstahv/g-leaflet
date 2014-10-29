@@ -286,10 +286,7 @@
 @sprite .leaflet-retina .leaflet-control-layers-toggle {
 	gwt-image: "layers2x";
 	background-size: 26px 26px;
-	background-position: center;
-	width: 36px;
-	height: 36px;
-}
+	}
 .leaflet-touch .leaflet-control-layers-toggle {
 	width: 44px;
 	height: 44px;
@@ -459,8 +456,8 @@
 	width: 24px;
 	margin: 0 auto;
 
-	filter: literal('progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)');
 	-ms-filter: literal('"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)"');
+	filter: literal('progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)');
 	}
 .leaflet-oldie .leaflet-popup-tip-container {
 	margin-top: -1px;

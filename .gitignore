@@ -6,3 +6,7 @@
 .settings/
 
 target/
+
+.idea/
+*.iml
+
