@@ -1,9 +1,8 @@
 package org.peimari.gleaflet.client;
 
-import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArrayString;
 
-public class TileLayerOptions extends JavaScriptObject {
+public class TileLayerOptions extends AbstractJsonOptions {
 	
 	protected TileLayerOptions() {}
 	
@@ -68,11 +67,6 @@ public class TileLayerOptions extends JavaScriptObject {
         public native final void setNoWrap(boolean noWrap)
 	/*-{
 		this.noWrap = noWrap;
-	}-*/;
-
-	public native final void setCustomOption(String optionName, String optionValue)
-	/*-{
-		this[optionName] = optionValue;
 	}-*/;
 	
 	public native final void setTileSize(int tileSize)

@@ -1,8 +1,6 @@
 package org.peimari.gleaflet.client;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
-public class MapOptions extends JavaScriptObject {
+public class MapOptions extends AbstractJsonOptions {
 	
 	protected MapOptions() {}
 	
