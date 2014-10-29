@@ -21,7 +21,25 @@ public class Map extends JavaScriptObject {
 	 */
 	public static native Map create(Element e, MapOptions options)
 	/*-{
-		return new $wnd.L.Map(e,options);
+
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                }, wait);
+                if (immediate && !timeout) func.apply(context, args);
+            };
+        };
+
+
+        var map = new $wnd.L.Map(e,options);
+        map.on('zoomanim', debounce(map._onZoomTransitionEnd, 250));
+
+		return map;
 	}-*/;
 
 	public native final int getZoom()

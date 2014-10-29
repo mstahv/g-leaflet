@@ -75,4 +75,9 @@ public class TileLayerOptions extends JavaScriptObject {
 		this[optionName] = optionValue;
 	}-*/;
 	
+	public native final void setTileSize(int tileSize)
+	/*-{
+		this.tileSize = tileSize;
+	}-*/;
+	
 }
