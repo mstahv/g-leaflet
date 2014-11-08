@@ -7,7 +7,12 @@ public class Polyline extends AbstractPath {
 	
 	protected Polyline() {}
 
-	public static native Polyline create(JsArray<LatLng> jsArray, PolylineOptions options) 
+	public static native Polyline createWithArray(JsArray<JsArray> point2dimArray, PolylineOptions options)
+	/*-{
+		return new $wnd.L.Polyline(point2dimArray, options);
+	}-*/;
+
+	public static native Polyline create(JsArray<LatLng> jsArray, PolylineOptions options)
 	/*-{
 		return new $wnd.L.Polyline(jsArray, options);
 	}-*/;
