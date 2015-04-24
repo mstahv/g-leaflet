@@ -286,6 +286,9 @@
 @sprite .leaflet-retina .leaflet-control-layers-toggle {
 	gwt-image: "layers2x";
 	background-size: 26px 26px;
+	width: 36px;
+	height: 36px;
+        background-position: 5px 5px;
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
 	width: 44px;
