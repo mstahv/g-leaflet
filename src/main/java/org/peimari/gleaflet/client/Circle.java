@@ -1,7 +1,7 @@
 package org.peimari.gleaflet.client;
 
 
-public class Circle extends AbstractPath {
+public class Circle extends CircleMarker {
 	
 	protected Circle() {}
 	
@@ -10,14 +10,5 @@ public class Circle extends AbstractPath {
 		return new $wnd.L.Circle(latlng, radius, circleOptions);
 	}-*/;
 
-	public native final LatLng getLatLng() 
-	/*-{
-		return this.getLatLng();
-	}-*/;
-
-	public native final double getRadius() 
-	/*-{
-		return this.getRadius();
-	}-*/;
 
 }

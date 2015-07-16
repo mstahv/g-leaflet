@@ -2,7 +2,7 @@ package org.peimari.gleaflet.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
 
-public class TileLayer extends JavaScriptObject implements ILayer {
+public class TileLayer extends Layer {
 	
 	protected TileLayer() {}
 	

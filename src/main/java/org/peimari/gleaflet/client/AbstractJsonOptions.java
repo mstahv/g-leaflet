@@ -1,8 +1,6 @@
 package org.peimari.gleaflet.client;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
-public class AbstractJsonOptions extends JavaScriptObject implements ILayer {
+public class AbstractJsonOptions extends Layer {
 
     protected AbstractJsonOptions() {
     }

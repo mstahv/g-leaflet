@@ -1,6 +1,6 @@
 package org.peimari.gleaflet.client.control;
 
-import org.peimari.gleaflet.client.ILayer;
+import org.peimari.gleaflet.client.Layer;
 
 
 public class Layers extends Control {
@@ -12,17 +12,17 @@ public class Layers extends Control {
 		return new $wnd.L.Control.Layers;
 	}-*/;
 	
-	public native final void addBaseLayer(ILayer layer, String name) 
+	public native final void addBaseLayer(Layer layer, String name) 
 	/*-{
 		this.addBaseLayer(layer, name);
 	}-*/;
 	
-	public native final void addOverlay(ILayer layer, String name) 
+	public native final void addOverlay(Layer layer, String name) 
 	/*-{
 		this.addOverlay(layer, name);
 	}-*/;
 	
-	public native final void removeLayer(ILayer layer) 
+	public native final void removeLayer(Layer layer) 
 	/*-{
 		this.removeLayer(layer);
 	}-*/;

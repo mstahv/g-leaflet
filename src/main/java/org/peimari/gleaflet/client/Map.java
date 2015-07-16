@@ -42,7 +42,7 @@ public class Map extends JavaScriptObject {
 		return map;
 	}-*/;
 
-	public native final int getZoom()
+	public native final double getZoom()
 	/*-{
 		return this.getZoom();
 	}-*/;
@@ -52,7 +52,7 @@ public class Map extends JavaScriptObject {
             return this.getCenter();
     }-*/;
 	
-	public native final void setView(LatLng center, Integer zoom)
+	public native final void setView(LatLng center, Double zoom)
 	/*-{
 		this.setView(center,zoom,null);
 	}-*/;
@@ -77,12 +77,12 @@ public class Map extends JavaScriptObject {
 		this.invalidateSize();
 	}-*/;
 
-	public native final void addLayer(ILayer layer)
+	public native final void addLayer(Layer layer)
 	/*-{
 		this.addLayer(layer);
 	}-*/;
 
-	public native final void removeLayer(ILayer layer)
+	public native final void removeLayer(Layer layer)
 	/*-{
 		this.removeLayer(layer);
 	}-*/;

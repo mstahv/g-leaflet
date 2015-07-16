@@ -3,7 +3,7 @@ package org.peimari.gleaflet.client;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
-public class GeoJSON extends FeatureGroup implements ILayer {
+public class GeoJSON extends FeatureGroup {
 	
 	protected GeoJSON() {}
 	

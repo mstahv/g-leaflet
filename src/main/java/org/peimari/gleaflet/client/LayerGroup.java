@@ -3,7 +3,7 @@ package org.peimari.gleaflet.client;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArray;
 
-public class LayerGroup extends JavaScriptObject implements ILayer {
+public class LayerGroup extends Layer {
 	
 	protected LayerGroup() {}
 	
@@ -12,30 +12,30 @@ public class LayerGroup extends JavaScriptObject implements ILayer {
 		return new $wnd.L.LayerGroup();
 	}-*/;
 	
-	public static LayerGroup create(ILayer[] layers) {
+	public static LayerGroup create(Layer[] layers) {
 		LayerGroup group = create();
-		for (ILayer iLayer : layers) {
+		for (Layer iLayer : layers) {
 			group.addLayer(iLayer);
 		}
 		return group;
 	}
 
 
-	public native final void addLayer(ILayer layer) 
+	public native final void addLayer(Layer layer) 
 	/*-{
 		this.addLayer(layer);
 	}-*/;
 
-	public native final void removeLayer(ILayer layer) 
+	public native final void removeLayer(Layer layer) 
 	/*-{
 		this.removeLayer(layer);
 	}-*/;
 	
-	public final ILayer[] getLayers() {
+	public final Layer[] getLayers() {
 		JsArray<JavaScriptObject> rawLayers = getRawLayers();
-		ILayer[] l = new ILayer[rawLayers.length()];
+		Layer[] l = new Layer[rawLayers.length()];
 		for (int i = 0; i < l.length; i++) {
-			l[i] = (ILayer) rawLayers.get(i);
+			l[i] = rawLayers.get(i).cast();
 		}
 		return l;
 	}

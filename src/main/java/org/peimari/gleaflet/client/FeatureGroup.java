@@ -1,7 +1,7 @@
 package org.peimari.gleaflet.client;
 
 
-public class FeatureGroup extends LayerGroup implements ILayer {
+public class FeatureGroup extends LayerGroup {
 	
 	protected FeatureGroup() {}
 	
@@ -10,9 +10,9 @@ public class FeatureGroup extends LayerGroup implements ILayer {
 		return new $wnd.L.FeatureGroup();
 	}-*/;
 	
-	public static FeatureGroup create(ILayer[] layers) {
+	public static FeatureGroup create(Layer[] layers) {
 		FeatureGroup group = create();
-		for (ILayer iLayer : layers) {
+		for (Layer iLayer : layers) {
 			group.addLayer(iLayer);
 		}
 		return group;

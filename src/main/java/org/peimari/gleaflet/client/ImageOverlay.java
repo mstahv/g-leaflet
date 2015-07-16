@@ -1,8 +1,6 @@
 package org.peimari.gleaflet.client;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
-public class ImageOverlay extends JavaScriptObject implements ILayer {
+public class ImageOverlay extends Layer {
 
     protected ImageOverlay() {
     }

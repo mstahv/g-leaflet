@@ -24,7 +24,7 @@ public class MapOptions extends AbstractJsonOptions {
 		this.attributionControl = b;
 	}-*/;
 
-	public native final void setZoom(int zoom) 
+	public native final void setZoom(double zoom) 
 	/*-{
 		this.zoom = zoom;
 	}-*/;

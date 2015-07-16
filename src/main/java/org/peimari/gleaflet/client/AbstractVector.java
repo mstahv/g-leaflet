@@ -1,8 +1,6 @@
 package org.peimari.gleaflet.client;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
-public class AbstractVector extends JavaScriptObject implements ILayer {
+public class AbstractVector extends Layer {
 	
 	protected AbstractVector() {}
 	
