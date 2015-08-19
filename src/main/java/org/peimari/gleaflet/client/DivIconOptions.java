@@ -30,8 +30,18 @@ public class DivIconOptions extends JavaScriptObject {
 		this.iconSize = size;
 	}-*/;
 
-	public native final void setHtml(String divIcon) 
+	public native final void setHtml(String html) 
 	/*-{
-		this.html = divIcon;
+		this.html = html;
 	}-*/;
+
+	public native final void setClassName(String className) 
+	/*-{
+		this.className = className;
+	}-*/;
+
+    public native final String getClassName() 
+    /*-{
+        return this.className;
+    }-*/;
 }
