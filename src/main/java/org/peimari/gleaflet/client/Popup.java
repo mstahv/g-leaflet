@@ -45,7 +45,7 @@ public class Popup extends JavaScriptObject {
      var fn = $entry(function(e) {
      	listener.@org.peimari.gleaflet.client.PopupClosedListener::onClosed(Lorg/peimari/gleaflet/client/Event;)(e);
      });
-     fn.prototype['gname'] = "close";
+     fn.prototype['gname'] = "remove";
      this.on(fn.prototype['gname'], fn);
      return fn;
      }-*/;
