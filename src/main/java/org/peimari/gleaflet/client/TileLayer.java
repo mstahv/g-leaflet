@@ -59,16 +59,4 @@ public class TileLayer extends Layer {
 		return fn;
          }-*/;
       
-        /**
-	 * Removes listener from layer. The listener is detected on listener
-	 * registration object returned by listener addition method.
-	 * 
-	 * @param listenerRegistration
-	 *            the object returned by listener addition method
-	 */
-	public native final void removeListener(
-			JavaScriptObject listenerRegistration)
-	/*-{
-		this.off(listenerRegistration.prototype.gname, listenerRegistration);
-	}-*/;
 }

@@ -50,15 +50,15 @@ public class AbstractVector extends Layer {
 		}));
 	}-*/;
         
-        public native final void bringToFront() 
-        /*-{
-            this.bringToFront();
-        }-*/;
+    public native final void bringToFront() 
+    /*-{
+        this.bringToFront();
+    }-*/;
 
-        public native final void bringToBack() 
-        /*-{
-            this.bringToBack();
-        }-*/;
+    public native final void bringToBack() 
+    /*-{
+        this.bringToBack();
+    }-*/;
 
 
 }
