@@ -19,5 +19,10 @@ public class CircleMarker extends AbstractPath {
 	/*-{
 		return this.getRadius();
 	}-*/;
+    
+    public native final void setRadius(double radius)
+	/*-{
+		return this.setRadius(radius);
+	}-*/;
 
 }
