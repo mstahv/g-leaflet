@@ -49,7 +49,19 @@ public class AbstractVector extends Layer {
 				listener.@org.peimari.gleaflet.client.MouseOutListener::onMouseOut(Lorg/peimari/gleaflet/client/MouseEvent;)(e);
 		}));
 	}-*/;
-        
+	
+	public native final void removeContextMenuListener()
+	/*-{
+		this.off("contextmenu");
+	}-*/;
+
+	public native final void addContextMenuListener(ContextMenuListener listener)
+	/*-{
+		this.on("contextmenu", $entry(function(e) {
+			listener.@org.peimari.gleaflet.client.ContextMenuListener::onContextMenu(Lorg/peimari/gleaflet/client/MouseEvent;)(e);
+		}));
+	}-*/;
+	
     public native final void bringToFront() 
     /*-{
         this.bringToFront();
