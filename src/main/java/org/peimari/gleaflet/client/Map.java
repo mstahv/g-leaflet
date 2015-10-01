@@ -104,6 +104,17 @@ public class Map extends JavaScriptObject {
 		this.on(fn.prototype['gname'], fn);
 		return fn;
 	}-*/;
+	
+    public native final JavaScriptObject addContextMenuListener(ContextMenuListener listener)
+    /*-{
+
+        var fn = $entry(function(e) {
+            listener.@org.peimari.gleaflet.client.ContextMenuListener::onContextMenu(Lorg/peimari/gleaflet/client/MouseEvent;)(e);
+        });
+        fn.prototype['gname'] = "contextmenu";
+        this.on(fn.prototype['gname'], fn);
+        return fn;
+    }-*/;
 
 	public native final void addControl(Control control)
 	/*-{
