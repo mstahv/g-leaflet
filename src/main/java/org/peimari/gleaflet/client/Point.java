@@ -10,5 +10,13 @@ public class Point extends JavaScriptObject {
 	/*-{
 		return new $wnd.L.Point(x, y);
 	}-*/;
+    
+    public native final double getX()/*-{
+        return this.x;
+    }-*/;
+    
+    public native final double getY()/*-{
+        return this.y;
+    }-*/;
 	
 }
