@@ -7,9 +7,9 @@ public class Layers extends Control {
 	
 	protected Layers() {}
 	
-	public static native Layers create() 
+	public static native Layers create(LayersOptions options)
 	/*-{
-		return new $wnd.L.Control.Layers;
+		return new $wnd.L.Control.Layers(null, null, options);
 	}-*/;
 	
 	public native final void addBaseLayer(Layer layer, String name) 
