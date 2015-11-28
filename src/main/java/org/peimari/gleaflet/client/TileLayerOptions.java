@@ -59,12 +59,7 @@ public class TileLayerOptions extends AbstractJsonOptions {
 		this.zIndex = zIndex;
 	}-*/;
 
-	public native final void setContinuousWorld(boolean continuousWorld)
-	/*-{
-		this.continuousWorld = continuousWorld;
-	}-*/;
-
-        public native final void setNoWrap(boolean noWrap)
+    public native final void setNoWrap(boolean noWrap)
 	/*-{
 		this.noWrap = noWrap;
 	}-*/;
