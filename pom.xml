@@ -4,7 +4,7 @@
     <!-- POM file generated with GWT webAppCreator -->
     <modelVersion>4.0.0</modelVersion>
 
-    <version>1.0.0-b4-SNAPSHOT</version>
+    <version>1.0.0-b4</version>
     <groupId>org.peimari</groupId>
     <artifactId>g-leaflet</artifactId>
     <packaging>jar</packaging>
@@ -14,7 +14,7 @@
         <url>git://github.com/mstahv/g-leaflet.git</url>
         <connection>scm:git:git://github.com/mstahv/g-leaflet.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/mstahv/g-leaflet.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>g-leaflet-1.0.0-b4</tag>
   </scm>
 
     <dependencies>
