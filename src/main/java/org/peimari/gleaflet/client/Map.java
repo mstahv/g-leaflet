@@ -57,7 +57,12 @@ public class Map extends JavaScriptObject {
 		this.setView(center,zoom,null);
 	}-*/;
 
-	public native final LatLngBounds getBounds()
+	public native final void flyTo(LatLng center, Double zoom)
+	/*-{
+		this.flyTo(center, zoom);
+	}-*/;
+
+    public native final LatLngBounds getBounds()
 	/*-{
 		return this.getBounds();
 	}-*/;
@@ -169,5 +174,6 @@ public class Map extends JavaScriptObject {
     /*-{
         this.closePopup(popup);
     }-*/;
+    
 
 }
