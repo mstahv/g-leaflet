@@ -34,6 +34,15 @@ public class Crs extends JavaScriptObject {
 		return $wnd.L.CRS[name];
 	}-*/;
 
+	/**
+	 * Adds a new Crs definition and makes it immediately available for use inside a Map. The
+	 * new Crs extends Crs.Simple, uses the Projection as specified in the parameters and
+	 * an affine transform as specified by the a, b, c, d parameters). For the meaning of the
+	 * affine transform parameters, see: http://leafletjs.com/reference.html#transformation.
+	 * @param name Name for the new Crs.
+	 * @param projection Name of the projection for this new Crs. It needs to be the name of a
+	 * valid projection defined in L.Projection (LonLat, SphericalMercator, Mercator).
+	 */
 	public static native final Crs add(String name, String projection, double a, double b, double c, double d)
 	/*-{
             $wnd.L.CRS[name] = $wnd.L.extend({}, $wnd.L.CRS.Simple, {
