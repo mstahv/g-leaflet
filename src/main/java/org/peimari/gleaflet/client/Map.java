@@ -44,12 +44,12 @@ public class Map extends JavaScriptObject {
 
 	public native final double getZoom()
 	/*-{
-		return this.getZoom();
-	}-*/;
+        return this.getZoom()*1;
+ 	}-*/;
 
 	public native final LatLng getCenter()
     /*-{
-            return this.getCenter();
+        return this.getCenter();
     }-*/;
 	
 	public native final void setView(LatLng center, Double zoom)
