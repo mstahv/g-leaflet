@@ -28,7 +28,7 @@ public class Polyline extends AbstractPath {
 	
 	public native final JsArray<LatLng> getRawLatLngs() 
 	/*-{
-		return this.getLatLngs();
+            return this.getLatLngs();
 	}-*/;
 
 
