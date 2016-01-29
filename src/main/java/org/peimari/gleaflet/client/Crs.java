@@ -45,7 +45,7 @@ public class Crs extends JavaScriptObject {
 	 */
 	public static native final Crs add(String name, String projection, double a, double b, double c, double d)
 	/*-{
-            $wnd.L.CRS[name] = $wnd.L.extend({}, $wnd.L.CRS.Simple, {
+            $wnd.L.CRS[name] = $wnd.L.extend({}, $wnd.L.CRS, {
                 code: name,
 		projection: $wnd.L.Projection[projection],
                 transformation: new $wnd.L.Transformation(a, b, c, d)
