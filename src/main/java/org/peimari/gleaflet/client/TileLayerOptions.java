@@ -69,4 +69,8 @@ public class TileLayerOptions extends AbstractJsonOptions {
 		this.tileSize = tileSize;
 	}-*/;
 	
+	public native final void setBounds(LatLngBounds bounds)
+	/*-{
+		this.bounds = bounds;
+	}-*/;
 }
