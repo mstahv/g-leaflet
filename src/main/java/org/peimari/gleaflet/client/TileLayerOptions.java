@@ -43,6 +43,11 @@ public class TileLayerOptions extends AbstractJsonOptions {
 	/*-{
 		this.maxZoom = maxZoom;
 	}-*/;
+	
+	public native final void setMaxNativeZoom(int maxNativeZoom)
+	/*-{
+		this.maxNativeZoom = maxNativeZoom;
+	}-*/;
 
 	public native final void setTms(boolean tms) 
 	/*-{
