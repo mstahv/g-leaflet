@@ -45,6 +45,11 @@ public class PopupOptions extends JavaScriptObject {
 	/*-{
 		this.closeOnClick = closeOnClick;
 	}-*/;
+	
+	public native final void setAutoClose(boolean autoClose)
+	/*-{
+		this.autoClose = autoClose;
+	}-*/;
 
 	public native final void setZoomAnimation(boolean zoomAnimation) 
 	/*-{
