@@ -175,9 +175,14 @@ public class Map extends JavaScriptObject {
         this.closePopup(popup);
     }-*/;
 
-    public native final void setDragging(Boolean dragging)
+    public native final void setDragging(boolean dragging)
     /*-{
-    	this.dragging = dragging;
+        if(dragging) {
+    		this.dragging.enable();
+    	}
+    	else {
+    		this.dragging.disable();
+    	}
 	}-*/;
     
 
