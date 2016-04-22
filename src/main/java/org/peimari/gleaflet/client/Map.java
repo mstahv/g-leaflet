@@ -184,6 +184,53 @@ public class Map extends JavaScriptObject {
     		this.dragging.disable();
     	}
 	}-*/;
-    
 
+    public native final void setBoxZoom(boolean boxZoom)
+    /*-{
+    	if(boxZoom) {
+			this.boxZoom.enable();
+		}
+		else {
+			this.boxZoom.disable();
+		}
+	}-*/;
+
+    public native final void setDoubleClickZoom(boolean doubleClickZoom)
+    /*-{
+		if(doubleClickZoom) {
+			this.doubleClickZoom.enable();
+		}
+		else {
+			this.doubleClickZoom.disable();
+		}
+	}-*/;
+    
+    public native final void setKeyboard(boolean keyboard)
+    /*-{
+		if(keyboard) {
+			this.keyboard.enable();
+		}
+		else {
+			this.keyboard.disable();
+		}
+	}-*/;
+    
+    public native final void setScrollWheelZoom(boolean scrollWheelZoom)
+    /*-{
+		if(scrollWheelZoom) {
+			this.scrollWheelZoom.enable();
+		}
+		else {
+			this.scrollWheelZoom.disable();
+		}
+	}-*/;
+    public native final void setTouchZoom(boolean touchZoom)
+    /*-{
+		if(dragging) {
+			this.touchZoom.enable();
+		}
+		else {
+			this.touchZoom.disable();
+		}
+	}-*/;
 }
