@@ -44,4 +44,8 @@ public class MapOptions extends AbstractJsonOptions {
             this.maxBounds = bounds;
         }-*/;
 
+		public native final void setDragging(boolean dragging)
+		/*-{
+            this.dragging = dragging;
+        }-*/;
 }
