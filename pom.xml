@@ -35,33 +35,6 @@
             <version>1.0.0.GA</version>
             <classifier>sources</classifier>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.8.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.sf.extcos</groupId>
-            <artifactId>extcos</artifactId>
-            <version>0.3b</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Logging -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.6.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.2</version>
-            <optional>true</optional>
-        </dependency>
-
-
     </dependencies>
 
     <build>
