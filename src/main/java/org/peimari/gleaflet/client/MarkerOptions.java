@@ -31,4 +31,9 @@ public class MarkerOptions extends JavaScriptObject {
 		this.draggable = draggable;
 	}-*/;
 
+    public native final void setZIndexOffset(int zIndexOffset)
+        /*-{
+            this.zIndexOffset = zIndexOffset;
+        }-*/;
+
 }
