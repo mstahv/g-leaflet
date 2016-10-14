@@ -142,6 +142,17 @@ public class Map extends JavaScriptObject {
 		return fn;
 	}-*/;
 
+	public native final JavaScriptObject addDragEndListener(
+			DragEndListener listener)
+	/*-{
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.DragEndListener::onDragEnd(Lorg/peimari/gleaflet/client/Event;)(e);
+		});
+		fn.prototype['gname'] = "dragend";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
+	}-*/;
+
 	/**
 	 * Removes listener from map. The listener is detected on listener
 	 * registration object returned by listener addition method.
