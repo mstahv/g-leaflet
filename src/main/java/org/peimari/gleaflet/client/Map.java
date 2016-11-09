@@ -131,6 +131,16 @@ public class Map extends JavaScriptObject {
 		this.removeControl(control);
 	}-*/;
 
+	public native final JavaScriptObject addBaseLayerChangeListener(BaseLayerChangeListener listener)
+	/*-{
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.BaseLayerChangeListener::onBaseLayerChange(Lorg/peimari/gleaflet/client/LayersControlEvent;)(e);
+		});
+		fn.prototype['gname'] = "baselayerchange";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
+	}-*/;
+
 	public native final JavaScriptObject addMoveEndListener(
 			MoveEndListener listener)
 	/*-{
