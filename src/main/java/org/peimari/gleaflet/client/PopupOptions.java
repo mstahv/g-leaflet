@@ -61,4 +61,9 @@ public class PopupOptions extends JavaScriptObject {
 		this.autoPanPadding = autoPanPadding; 
 	}-*/;
 
+	public  native final void setClassName(String className) 
+	/*-{
+		this.className = className; 
+	}-*/;
+
 }
