@@ -1,6 +1,7 @@
 package org.peimari.gleaflet.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.dom.client.Element;
 
 public class Popup extends Layer {
 
@@ -50,5 +51,10 @@ public class Popup extends Layer {
      this.on(fn.prototype['gname'], fn);
      return fn;
      }-*/;
+    
+    public native final Element getContentNode() 
+    /*-{
+        return this._contentNode;
+    }-*/;
 
 }
