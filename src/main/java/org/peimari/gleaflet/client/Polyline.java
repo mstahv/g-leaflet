@@ -31,5 +31,9 @@ public class Polyline extends AbstractPath {
             return this.getLatLngs();
 	}-*/;
 
+        public native final void addLatLng(LatLng latlng)
+	/*-{
+            this.addLatLng(latlng);
+	}-*/;
 
 }

@@ -14,7 +14,12 @@ public class Marker extends AbstractPath {
 	/*-{
 		return this.getLatLng();
 	}-*/;
-	
+        
+        public native final void setLatLng(LatLng l) 
+	/*-{
+                this.setLatLng(l);
+	}-*/;
+
 	public native final Marker setIcon(AnyIcon icon) 
 	/*-{
 		return this.setIcon(icon);
