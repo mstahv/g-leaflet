@@ -21,6 +21,11 @@ public class PopupOptions extends JavaScriptObject {
 		this.minWidth = minWidth;
 	}-*/;
 
+	public native final void setMaxHeight(int maxHeight)
+	/*-{
+		this.maxHeight = maxHeight;
+	}-*/;
+
 	public native final void setCloseButton(boolean closeButton) 
 	/*-{
 		this.closeButton = closeButton;
