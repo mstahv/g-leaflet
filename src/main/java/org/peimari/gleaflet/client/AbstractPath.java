@@ -36,6 +36,15 @@ public class AbstractPath extends AbstractVector {
 		return JSON.stringify(this.toGeoJSON());
 	}-*/;
 
+	public native final void bindTooltip(String tooltip, TooltipOptions tooltipOptions)
+	/*-{
+		this.bindTooltip(tooltip, tooltipOptions);
+	}-*/;
+
+	public final void bindTooltip(String tooltip) {
+		bindTooltip(tooltip, null);
+	}
+
 	public native final void bindPopup(String popup, PopupOptions popupOptions) 
 	/*-{
 		this.bindPopup(popup, popupOptions);
