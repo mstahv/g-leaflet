@@ -1,8 +1,6 @@
 package org.peimari.gleaflet.client;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
-public class PopupOptions extends JavaScriptObject {
+public class PopupOptions extends DivOverlayOptions {
 	
 	protected PopupOptions() {}
 	
@@ -36,11 +34,6 @@ public class PopupOptions extends JavaScriptObject {
 		this.autoPan = autoPan;
 	}-*/;
 
-	public native final void setOffset(Point offset) 
-	/*-{
-		this.offset = offset;
-	}-*/;
-
         public native final void setKeepInView(boolean keepInView) 
 	/*-{
 		this.keepInView = keepInView;
@@ -64,11 +57,6 @@ public class PopupOptions extends JavaScriptObject {
 	public  native final void setAutoPanPadding(Point autoPanPadding) 
 	/*-{
 		this.autoPanPadding = autoPanPadding; 
-	}-*/;
-
-	public  native final void setClassName(String className) 
-	/*-{
-		this.className = className; 
 	}-*/;
 
 }

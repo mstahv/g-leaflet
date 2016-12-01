@@ -3,6 +3,16 @@ package org.peimari.gleaflet.client;
 public class AbstractVector extends Layer {
 	
 	protected AbstractVector() {}
+
+	public native final void openTooltip()
+	/*-{
+		this.openTooltip();
+	}-*/;
+
+	public native final void closeTooltip()
+	/*-{
+		this.closeTooltip();
+	}-*/;
 	
 	public native final void openPopup() 
 	/*-{

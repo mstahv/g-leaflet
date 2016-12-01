@@ -241,6 +241,11 @@ public class Map extends JavaScriptObject {
         this.closePopup(popup);
     }-*/;
 
+	public native final void closeTooltip(Tooltip tooltip)
+    /*-{
+        this.closeTooltip(tooltip);
+    }-*/;
+
     public native final void setDragging(boolean dragging)
     /*-{
         if(dragging) {
