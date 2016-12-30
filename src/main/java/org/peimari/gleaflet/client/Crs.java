@@ -52,7 +52,11 @@ public class Crs extends JavaScriptObject {
             $wnd.L.CRS[name] = $wnd.L.extend({}, $wnd.L.CRS, {
                 code: name,
 		projection: $wnd.L.Projection[projection],
-                transformation: new $wnd.L.Transformation(a, b, c, d)
+                transformation: new $wnd.L.Transformation(a, b, c, d),
+                distance: function (t, e) {
+                    var i = e.lng - t.lng, n = e.lat - t.lat;
+                    return Math.sqrt(i * i + n * n)
+                }
             });
             return $wnd.L.CRS[name];
         }-*/;
@@ -83,7 +87,11 @@ public class Crs extends JavaScriptObject {
             $wnd.L.CRS[name] = $wnd.L.extend({}, $wnd.L.CRS, {
                 code: name,
 		projection: projection,
-                transformation: new $wnd.L.Transformation(a, b, c, d)
+                transformation: new $wnd.L.Transformation(a, b, c, d),
+                distance: function (t, e) {
+                    var i = e.lng - t.lng, n = e.lat - t.lat;
+                    return Math.sqrt(i * i + n * n)
+                }
             });
             return $wnd.L.CRS[name];
         }-*/;
