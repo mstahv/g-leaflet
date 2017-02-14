@@ -52,7 +52,46 @@ public class Crs extends JavaScriptObject {
             $wnd.L.CRS[name] = $wnd.L.extend({}, $wnd.L.CRS, {
                 code: name,
 		projection: $wnd.L.Projection[projection],
-                transformation: new $wnd.L.Transformation(a, b, c, d)
+                transformation: new $wnd.L.Transformation(a, b, c, d),
+                distance: function (t, e) {
+                    var i = e.lng - t.lng, n = e.lat - t.lat;
+                    return Math.sqrt(i * i + n * n)
+                }
+            });
+            return $wnd.L.CRS[name];
+        }-*/;
+
+	/**
+	 * Adds a new Crs definition and makes it immediately available for use inside a Map. The
+	 * new Crs extends Crs.Simple, uses a plat-carré projection with the
+	 * extents given by the min_* and max_* parameters. For the meaning of the
+	 * affine transform parameters, see: http://leafletjs.com/reference.html#transformation.
+	 * @param name Name for the new Crs.
+     * @param a a in transformation calculation (a*x + b, c*y + d)
+     * @param b b in transformation calculation (a*x + b, c*y + d)
+     * @param c c in transformation calculation (a*x + b, c*y + d)
+     * @param d d in transformation calculation (a*x + b, c*y + d)
+	 */
+	public static native final Crs add(String name, double min_x, double min_y, double max_x, double max_y,
+			double a, double b, double c, double d)
+	/*-{
+            var projection = {
+              project: function (latlng) {
+                return new $wnd.L.Point(latlng.lng, latlng.lat);
+              },
+              unproject: function (point) {
+                return new $wnd.L.LatLng(point.y, point.x);
+              },
+              bounds: $wnd.L.bounds([min_x, min_y], [max_x, max_y])
+            };
+            $wnd.L.CRS[name] = $wnd.L.extend({}, $wnd.L.CRS, {
+                code: name,
+		projection: projection,
+                transformation: new $wnd.L.Transformation(a, b, c, d),
+                distance: function (t, e) {
+                    var i = e.lng - t.lng, n = e.lat - t.lat;
+                    return Math.sqrt(i * i + n * n)
+                }
             });
             return $wnd.L.CRS[name];
         }-*/;
