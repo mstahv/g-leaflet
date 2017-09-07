@@ -72,6 +72,16 @@ public class Map extends JavaScriptObject {
 		this.fitBounds(b);
 	}-*/;
 
+	public native final void locate(LocateOptions o)
+	/*-{
+		this.locate(o);
+	}-*/;
+
+	public native final void stopLocate()
+	/*-{
+		this.stopLocate();
+	}-*/;
+
 	public native final Attribution getAttributionControl()
 	/*-{
 		return this.attributionControl;
@@ -90,6 +100,41 @@ public class Map extends JavaScriptObject {
 	public native final void removeLayer(Layer layer)
 	/*-{
 		this.removeLayer(layer);
+	}-*/;
+
+	/**
+	 * Adds location found listener to map.
+	 *
+	 * @param listener
+	 * @return a handle that can be used to remove this specific listener from
+	 *         the map
+	 */
+	public native final JavaScriptObject addLocationFoundListener(LocationFoundListener listener)
+	/*-{
+
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.LocationFoundListener::onFound(Lorg/peimari/gleaflet/client/LocationEvent;)(e);
+		});
+		fn.prototype['gname'] = "locationfound";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
+	}-*/;
+
+	/**
+	 * Adds location error listener to map.
+	 *
+	 * @param listener
+	 * @return a handle that can be used to remove this specific listener from
+	 *         the map
+	 */
+	public native final JavaScriptObject addLocationErrorListener(LocationErrorListener listener)
+	/*-{
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.LocationErrorListener::onError(Lorg/peimari/gleaflet/client/ErrorEvent;)(e);
+		});
+		fn.prototype['gname'] = "locationerror";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
 	}-*/;
 
 	/**
@@ -131,6 +176,16 @@ public class Map extends JavaScriptObject {
 		this.removeControl(control);
 	}-*/;
 
+	public native final JavaScriptObject addBaseLayerChangeListener(BaseLayerChangeListener listener)
+	/*-{
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.BaseLayerChangeListener::onBaseLayerChange(Lorg/peimari/gleaflet/client/LayersControlEvent;)(e);
+		});
+		fn.prototype['gname'] = "baselayerchange";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
+	}-*/;
+
 	public native final JavaScriptObject addMoveEndListener(
 			MoveEndListener listener)
 	/*-{
@@ -138,6 +193,17 @@ public class Map extends JavaScriptObject {
 				listener.@org.peimari.gleaflet.client.MoveEndListener::onMoveEnd(Lorg/peimari/gleaflet/client/Event;)(e);
 		});
 		fn.prototype['gname'] = "moveend";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
+	}-*/;
+
+	public native final JavaScriptObject addDragEndListener(
+			DragEndListener listener)
+	/*-{
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.DragEndListener::onDragEnd(Lorg/peimari/gleaflet/client/Event;)(e);
+		});
+		fn.prototype['gname'] = "dragend";
 		this.on(fn.prototype['gname'], fn);
 		return fn;
 	}-*/;
@@ -173,6 +239,11 @@ public class Map extends JavaScriptObject {
     public native final void closePopup(Popup popup)
     /*-{
         this.closePopup(popup);
+    }-*/;
+
+	public native final void closeTooltip(Tooltip tooltip)
+    /*-{
+        this.closeTooltip(tooltip);
     }-*/;
 
     public native final void setDragging(boolean dragging)

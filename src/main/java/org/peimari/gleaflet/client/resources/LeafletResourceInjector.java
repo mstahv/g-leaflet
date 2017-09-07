@@ -25,7 +25,7 @@ public class LeafletResourceInjector {
 	}
 
 	protected String getDefaultMarkerDirectory() {
-		return GWT.getModuleBaseURL() + "markers";
+		return GWT.getModuleBaseURL() + "markers/";
 	}
 
 	protected native static void setDefaultMarkerIconPath(String path) 

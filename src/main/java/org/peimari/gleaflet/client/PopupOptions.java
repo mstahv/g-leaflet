@@ -1,8 +1,6 @@
 package org.peimari.gleaflet.client;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
-public class PopupOptions extends JavaScriptObject {
+public class PopupOptions extends DivOverlayOptions {
 	
 	protected PopupOptions() {}
 	
@@ -21,6 +19,11 @@ public class PopupOptions extends JavaScriptObject {
 		this.minWidth = minWidth;
 	}-*/;
 
+	public native final void setMaxHeight(int maxHeight)
+	/*-{
+		this.maxHeight = maxHeight;
+	}-*/;
+
 	public native final void setCloseButton(boolean closeButton) 
 	/*-{
 		this.closeButton = closeButton;
@@ -29,11 +32,6 @@ public class PopupOptions extends JavaScriptObject {
 	public native final void setAutoPan(boolean autoPan) 
 	/*-{
 		this.autoPan = autoPan;
-	}-*/;
-
-	public native final void setOffset(Point offset) 
-	/*-{
-		this.offset = offset;
 	}-*/;
 
         public native final void setKeepInView(boolean keepInView) 

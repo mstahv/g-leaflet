@@ -16,6 +16,11 @@ public class IconOptions extends JavaScriptObject {
 		this.iconUrl = url;
 	}-*/;
 
+	public native final void setPopupAnchor(Point anchor)
+	/*-{
+		this.popupAnchor = anchor;
+	}-*/;
+
 	public native final void setIconAnchor(Point anchor) 
 	/*-{
 		this.iconAnchor = anchor;

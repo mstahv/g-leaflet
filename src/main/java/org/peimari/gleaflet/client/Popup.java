@@ -1,8 +1,9 @@
 package org.peimari.gleaflet.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.dom.client.Element;
 
-public class Popup extends Layer {
+public class Popup extends DivOverlay {
 
     protected Popup() {
     }
@@ -15,24 +16,8 @@ public class Popup extends Layer {
      return $wnd.L.popup();
      }-*/;
 
-    public native final Popup setContent(String htmlContent) /*-{
-     return this.setContent(htmlContent);
-     }-*/;
-
     public native final Popup openOn(Map map) /*-{
      return this.openOn(map);
-     }-*/;
-
-    public native final Popup addTo(Map map) /*-{
-     return this.addTo(map);
-     }-*/;
-
-    public native final Popup setLatLng(LatLng ll) /*-{
-     return this.setLatLng(ll);
-     }-*/;
-
-    public native final Popup update() /*-{
-     return this.update();
      }-*/;
 
     /**
@@ -50,5 +35,10 @@ public class Popup extends Layer {
      this.on(fn.prototype['gname'], fn);
      return fn;
      }-*/;
+    
+    public native final Element getContentNode() 
+    /*-{
+        return this._contentNode;
+    }-*/;
 
 }
