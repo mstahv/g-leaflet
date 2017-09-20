@@ -2,18 +2,13 @@ package org.peimari.gleaflet.client;
 
 import com.google.gwt.core.client.JsArrayString;
 
-public class TileLayerOptions extends AbstractJsonOptions {
+public class TileLayerOptions extends GridLayerOptions {
 	
 	protected TileLayerOptions() {}
 	
 	public static native TileLayerOptions create() 
 	/*-{
 		return {};
-	}-*/;
-
-	public native final void setAttribution(String attributionString) 
-	/*-{
-		this.attribution = attributionString;
 	}-*/;
 
 	public native final void setDetectRetina(boolean detect) 
@@ -43,39 +38,10 @@ public class TileLayerOptions extends AbstractJsonOptions {
 	/*-{
 		this.maxZoom = maxZoom;
 	}-*/;
-	
-	public native final void setMaxNativeZoom(int maxNativeZoom)
-	/*-{
-		this.maxNativeZoom = maxNativeZoom;
-	}-*/;
 
 	public native final void setTms(boolean tms) 
 	/*-{
 		this.tms = tms;
 	}-*/;
 
-	public native final void setOpacity(double opacity) 
-	/*-{
-		this.opacity = opacity;
-	}-*/;
-
-	public native final void setZindex(int zIndex) 
-	/*-{
-		this.zIndex = zIndex;
-	}-*/;
-
-    public native final void setNoWrap(boolean noWrap)
-	/*-{
-		this.noWrap = noWrap;
-	}-*/;
-	
-	public native final void setTileSize(int tileSize)
-	/*-{
-		this.tileSize = tileSize;
-	}-*/;
-	
-	public native final void setBounds(LatLngBounds bounds)
-	/*-{
-		this.bounds = bounds;
-	}-*/;
 }
