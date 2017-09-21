@@ -338,14 +338,19 @@
 	background: #fff;
 	border-radius: 5px;
 	}
-.leaflet-control-layers-toggle {
-	background-image: url(images/layers.png);
+// Note, these are different from core leaflet css as we are using GWT Images
+@sprite .leaflet-control-layers-toggle {
+    gwt-image: "layers";
+    background-position: center;
 	width: 36px;
 	height: 36px;
 	}
-.leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(images/layers-2x.png);
+@sprite .leaflet-retina .leaflet-control-layers-toggle {
+    gwt-image: "layers2x";
 	background-size: 26px 26px;
+	width: 36px;
+    height: 36px;
+    background-position: 5px 5px;
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
 	width: 44px;
@@ -431,12 +436,12 @@
 	background: #fff;
 	background: rgba(255, 255, 255, 0.5);
 	}
-.leaflet-control-scale-line:not(:first-child) {
+.leaflet-control-scale-line:not\(:first-child\) {
 	border-top: 2px solid #777;
 	border-bottom: none;
 	margin-top: -2px;
 	}
-.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+.leaflet-control-scale-line:not\(:first-child\):not\(:last-child\) {
 	border-bottom: 2px solid #777;
 	}
 
@@ -531,7 +536,6 @@
 	margin: 0 auto;
 
 	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
-	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
 	}
 .leaflet-oldie .leaflet-popup-tip-container {
 	margin-top: -1px;
