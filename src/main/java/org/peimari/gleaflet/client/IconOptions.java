@@ -31,4 +31,13 @@ public class IconOptions extends JavaScriptObject {
 		this.iconSize = size;
 	}-*/;
 
+	public native final void setClassName(String className)
+	/*-{
+		this.className = className;
+	}-*/;
+
+	public native final String getClassName()
+    /*-{
+        return this.className;
+    }-*/;
 }
