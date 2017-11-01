@@ -186,6 +186,26 @@ public class Map extends JavaScriptObject {
 		return fn;
 	}-*/;
 
+	public native final JavaScriptObject addOverlayAddListener(OverlayAddListener listener)
+	/*-{
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.OverlayAddListener::onOverlayAdd(Lorg/peimari/gleaflet/client/LayersControlEvent;)(e);
+		});
+		fn.prototype['gname'] = "overlayadd";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
+	}-*/;
+
+	public native final JavaScriptObject addOverlayRemoveListener(OverlayRemoveListener listener)
+	/*-{
+		var fn = $entry(function(e) {
+				listener.@org.peimari.gleaflet.client.OverlayRemoveListener::onOverlayRemove(Lorg/peimari/gleaflet/client/LayersControlEvent;)(e);
+		});
+		fn.prototype['gname'] = "overlayremove";
+		this.on(fn.prototype['gname'], fn);
+		return fn;
+	}-*/;
+
 	public native final JavaScriptObject addMoveEndListener(
 			MoveEndListener listener)
 	/*-{
