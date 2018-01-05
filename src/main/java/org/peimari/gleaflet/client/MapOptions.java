@@ -54,23 +54,28 @@ public class MapOptions extends AbstractJsonOptions {
         	this.touchZoom = touchZoom;
     	}-*/;
 
-		public native final void setDoubleClickZoom(boolean doubleClickZoom)
-		/*-{
-    		this.doubleClickZoom = doubleClickZoom;
-		}-*/;
+        public native final void setDoubleClickZoom(boolean doubleClickZoom)
+        /*-{
+        this.doubleClickZoom = doubleClickZoom;
+        }-*/;
 
-		public native final void setBoxZoom(boolean boxZoom)
-		/*-{
-    		this.boxZoom = boxZoom;
-		}-*/;
+        public native final void setBoxZoom(boolean boxZoom)
+        /*-{
+        this.boxZoom = boxZoom;
+        }-*/;
 
-		public native final void setScrollWheelZoom(boolean scrollWheelZoom)
-		/*-{
-    		this.scrollWheelZoom = scrollWheelZoom;
-		}-*/;
+        public native final void setScrollWheelZoom(boolean scrollWheelZoom)
+        /*-{
+        this.scrollWheelZoom = scrollWheelZoom;
+        }-*/;
 
-		public native final void setKeyboard(boolean keyboard)
-		/*-{
-    		this.keyboard = keyboard;
-		}-*/;
+        public native final void setKeyboard(boolean keyboard)
+        /*-{
+        this.keyboard = keyboard;
+        }-*/;
+
+        public native final void setWorldCopyJump(boolean worldCopyJump)
+        /*-{
+        this.worldCopyJump = worldCopyJump;
+        }-*/;
 }
