@@ -14,7 +14,7 @@ public class DivIconOptions extends JavaScriptObject {
 
 	/**
 	 * The coordinates of the point from which popups will "open", relative to the icon anchor.
-	 * @param point
+	 * @param point the point from which the popup opens
 	 */
 	public native final void setPopupAnchor(Point point)
 	/*-{
@@ -27,7 +27,7 @@ public class DivIconOptions extends JavaScriptObject {
 	 * geographical location. Centered by default if size is specified, also can
 	 * be set in CSS with negative margins.
 	 * 
-	 * @param point
+	 * @param point the point from where the icon is anchored
 	 */
 	public native final void setIconAnchor(Point point)
 	/*-{

@@ -29,12 +29,12 @@ public class GridLayer extends Layer {
 
     /**
      * Adds load listener to the layer.
+     * http://leafletjs.com/reference-1.2.0.html#gridlayer-load
      * <p>
      * The listeners are called when all visible tiles are loaded.
-     * @param listener
+     * @param listener the listener
      * @return a handle that can be used to remove this specific listener from
      *         the map
-     * @see {@link http://leafletjs.com/reference-1.2.0.html#gridlayer-load}
      */
     public native final JavaScriptObject addLoadListener(LoadListener listener)
 	/*-{
@@ -48,12 +48,12 @@ public class GridLayer extends Layer {
 
     /**
      * Adds loading listener to the layer.
+     * http://leafletjs.com/reference-1.2.0.html#gridlayer-load
      * <p>
      * The listeners are called when the tile layer starts loading tiles.
-     * @param listener
+     * @param listener the listener
      * @return a handle that can be used to remove this specific listener from
      *         the map
-     * @see {@link http://leafletjs.com/reference-1.2.0.html#gridlayer-loading}
      */
     public native final JavaScriptObject addLoadingListener(LoadingListener listener)
     /*-{

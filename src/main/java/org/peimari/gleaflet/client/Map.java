@@ -15,9 +15,9 @@ public class Map extends JavaScriptObject {
 	/**
 	 * Initializes Leaflet map overlay (L.Map) around given element.
 	 * 
-	 * @param e
-	 * @param options
-	 * @return
+	 * @param e the element to the map should be rendered
+	 * @param options options for the map
+	 * @return the created Map object
 	 */
 	public static native Map create(Element e, MapOptions options)
 	/*-{
@@ -105,7 +105,7 @@ public class Map extends JavaScriptObject {
 	/**
 	 * Adds location found listener to map.
 	 *
-	 * @param listener
+	 * @param listener the listener
 	 * @return a handle that can be used to remove this specific listener from
 	 *         the map
 	 */
@@ -123,7 +123,7 @@ public class Map extends JavaScriptObject {
 	/**
 	 * Adds location error listener to map.
 	 *
-	 * @param listener
+	 * @param listener the listener
 	 * @return a handle that can be used to remove this specific listener from
 	 *         the map
 	 */
@@ -140,7 +140,7 @@ public class Map extends JavaScriptObject {
 	/**
 	 * Adds click listener to map.
 	 * 
-	 * @param listener
+	 * @param listener the listener
 	 * @return a handle that can be used to remove this specific listener from
 	 *         the map
 	 */

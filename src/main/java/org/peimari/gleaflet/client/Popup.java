@@ -22,7 +22,7 @@ public class Popup extends DivOverlay {
 
     /**
      *
-     * @param listener
+     * @param listener the listener
      * @return handler registration
      * @deprecated use LayerRemovedListener instead
      */
