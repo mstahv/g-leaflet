@@ -14,14 +14,19 @@
         <url>git://github.com/mstahv/g-leaflet.git</url>
         <connection>scm:git:git://github.com/mstahv/g-leaflet.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/mstahv/g-leaflet.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
-  <distributionManagement>
-      <repository>
-          <id>v4</id>
-          <url>sftp://virit.in/home/dev/maven2/</url>
-      </repository>
-  </distributionManagement>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>v4</id>
+            <url>sftp://virit.in/home/dev/maven2/</url>
+        </repository>
+    </distributionManagement>
+  
+    <organization>
+        <name>Vaadin Community</name>
+        <url>http://vaadin.com/forum/</url>
+    </organization>
 
     <dependencies>
         <dependency>
@@ -79,7 +84,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.3.1</version>
+                <version>3.0.2</version>
                 <configuration>
                     <archive>
                         <manifest>
