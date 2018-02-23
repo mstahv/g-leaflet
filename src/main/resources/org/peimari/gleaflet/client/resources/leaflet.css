@@ -342,7 +342,7 @@
 	background: #fff;
 	border-radius: 5px;
 	}
-// Note, these are different from core leaflet css as we are using GWT Images
+/* Note, these are different from core leaflet css as we are using GWT Images */
 @sprite .leaflet-control-layers-toggle {
     gwt-image: "layers";
     background-position: center;
