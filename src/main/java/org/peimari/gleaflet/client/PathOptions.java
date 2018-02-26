@@ -36,9 +36,9 @@ public class PathOptions extends JavaScriptObject {
 		this.pointerEvents = pointerEvents;
 	}-*/;
 
-	public native final void setNonBubblingEvents(JavaScriptObject nonBubblingEvents)
+	public native final void setBubblingMouseEvents(boolean bubblingMouseEvents)
 	/*-{
-		this.nonBubblingEvents = nonBubblingEvents;
+		this.bubblingMouseEvents = bubblingMouseEvents;
 	}-*/;
 
 	public native final void setClassName(String className)
