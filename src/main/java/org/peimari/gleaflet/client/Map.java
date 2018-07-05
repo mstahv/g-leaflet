@@ -324,4 +324,9 @@ public class Map extends JavaScriptObject {
 			this.touchZoom.disable();
 		}
 	}-*/;
+
+    public native final LatLng containerPointToLatLng(Point p) 
+    /*-{
+            return this.containerPointToLatLng(p);
+    }-*/;
 }
