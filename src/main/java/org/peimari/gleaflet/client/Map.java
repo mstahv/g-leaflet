@@ -57,6 +57,11 @@ public class Map extends JavaScriptObject {
 		this.setView(center,zoom,null);
 	}-*/;
 
+        public native final void setView(LatLng center, Double zoom, JavaScriptObject options)
+	/*-{
+		this.setView(center,zoom,options);
+	}-*/;
+
 	public native final void flyTo(LatLng center, Double zoom)
 	/*-{
 		this.flyTo(center, zoom);
