@@ -1,3 +1,8 @@
+{{https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg|Published on Vaadin  Directory}}
+{{https://img.shields.io/vaadin-directory/star/g-leaflet.svg|Stars on vaadin.com/directory}}
+
+[[https://vaadin.com/directory/component/g-leaflet|g-leaflet on Vaadin Directory]]
+
 = g-leaflet Add-On project =
 
 g-leaflet is a fresh start for GWT API for Leaflet. Integration 
