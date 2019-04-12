@@ -44,4 +44,9 @@ public class TileLayerOptions extends GridLayerOptions {
 		this.tms = tms;
 	}-*/;
 
+	public native final void setZoomOffset(int zoomOffset)
+	/*-{
+		this.zoomOffset = zoomOffset;
+	}-*/;
+
 }
