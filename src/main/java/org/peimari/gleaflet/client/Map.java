@@ -14,7 +14,7 @@ public class Map extends JavaScriptObject {
 
 	/**
 	 * Initializes Leaflet map overlay (L.Map) around given element.
-	 * 
+	 *
 	 * @param e the element to the map should be rendered
 	 * @param options options for the map
 	 * @return the created Map object
@@ -51,7 +51,12 @@ public class Map extends JavaScriptObject {
     /*-{
         return this.getCenter();
     }-*/;
-	
+
+    public native final Point getSize()
+    /*-{
+           return this.getSize();
+     }-*/;
+
 	public native final void setView(LatLng center, Double zoom)
 	/*-{
 		this.setView(center,zoom,null);
@@ -144,7 +149,7 @@ public class Map extends JavaScriptObject {
 
 	/**
 	 * Adds click listener to map.
-	 * 
+	 *
 	 * @param listener the listener
 	 * @return a handle that can be used to remove this specific listener from
 	 *         the map
@@ -159,7 +164,7 @@ public class Map extends JavaScriptObject {
 		this.on(fn.prototype['gname'], fn);
 		return fn;
 	}-*/;
-	
+
     public native final JavaScriptObject addContextMenuListener(ContextMenuListener listener)
     /*-{
 
@@ -236,7 +241,7 @@ public class Map extends JavaScriptObject {
 	/**
 	 * Removes listener from map. The listener is detected on listener
 	 * registration object returned by listener addition method.
-	 * 
+	 *
 	 * @param listenerRegistration
 	 *            the object returned by listener addition method
 	 */
@@ -260,7 +265,7 @@ public class Map extends JavaScriptObject {
     /*-{
         this.setMaxBounds(bounds);
     }-*/;
-    
+
     public native final void closePopup(Popup popup)
     /*-{
         this.closePopup(popup);
@@ -300,7 +305,7 @@ public class Map extends JavaScriptObject {
 			this.doubleClickZoom.disable();
 		}
 	}-*/;
-    
+
     public native final void setKeyboard(boolean keyboard)
     /*-{
 		if(keyboard) {
@@ -310,7 +315,7 @@ public class Map extends JavaScriptObject {
 			this.keyboard.disable();
 		}
 	}-*/;
-    
+
     public native final void setScrollWheelZoom(boolean scrollWheelZoom)
     /*-{
 		if(scrollWheelZoom) {
@@ -330,7 +335,7 @@ public class Map extends JavaScriptObject {
 		}
 	}-*/;
 
-    public native final LatLng containerPointToLatLng(Point p) 
+    public native final LatLng containerPointToLatLng(Point p)
     /*-{
             return this.containerPointToLatLng(p);
     }-*/;
