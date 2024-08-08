@@ -21,6 +21,7 @@ public class LeafletResourceInjector {
 	protected void injectResources() {
 		bundle.css().ensureInjected();
 		injectScript(bundle.baseScript().getText());
+		injectScript(bundle.pluginScript().getText());
 		setDefaultMarkerIconPath(getDefaultMarkerDirectory());
 	}
 
