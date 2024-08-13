@@ -25,7 +25,7 @@
   
     <organization>
         <name>Vaadin Community</name>
-        <url>http://vaadin.com/forum/</url>
+        <url>https://vaadin.com/forum/</url>
     </organization>
 
     <dependencies>
