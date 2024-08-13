@@ -20,5 +20,8 @@ public interface LeafletClientBundle extends ClientBundle {
 
     @Source("images/layers-2x.png")
     ImageResource layers2x();
+    
+    @Source("leaflet-wms-header/index.js")
+    TextResource pluginScript();
 
 }
